@@ -8,8 +8,22 @@
 	<h1>E games are the best</h1>
 
 	<p>
-		it's easy and fun
+		my favorite gamers are:
 	</p>
+	<ol>
+        {% for player in players %}
+        <li> {{player}} </li>
+    	{% endfor %}
+
+
+
+    	{% if likes_same_sport == False%}
+    	<p>oh, you like differnt sports</p>
+    	{% else %}
+        <p> I like the same sport!</p>
+		{% endif %}
+    </ol>
+
 </body>
 
 </html>
